@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
@@ -8,6 +13,13 @@ header{
     height: 100vh;
     background-image: url(../images/hero.png);
     color: white;
+}
+
+.h1-big{
+    font-weight: 700; 
+    color: #A8AC2E; 
+    font-size: 65px; 
+    letter-spacing: -3px;
 }
 
 h3{
