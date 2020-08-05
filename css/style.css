@@ -6,13 +6,18 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    color: #757575 !important;
+    /* color: #757575 !important; */
 }
 
-header{
+.home-header{
     height: 100vh;
     background-image: url(../images/hero.png);
     color: white;
+}
+
+.innerpage-header{
+    height: 30vh;
+    color: #fff;
 }
 
 .h1-big{
@@ -21,6 +26,13 @@ header{
     font-size: 65px; 
     letter-spacing: -3px;
 }
+h1{
+    font-weight: 700; 
+    font-size: 65px; 
+    letter-spacing: -3px;
+}
+
+
 
 h3{
     font-weight: 700;
@@ -41,6 +53,11 @@ nav{
 .nav li a {
     color: white;
     float: right;
+}
+
+.active{
+    text-decoration: underline !important;
+    color:#a8ac2e !important;
 }
 @media (min-width: 768px){
     .navbar-nav {
