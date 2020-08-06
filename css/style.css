@@ -19,6 +19,11 @@ body{
     height: 30vh;
     color: #fff;
 }
+.h1-home-header{
+    font-size: 74pt;
+    letter-spacing: -8px; 
+    font-weight: 700;
+}
 
 .h1-big{
     font-weight: 700; 
@@ -59,11 +64,7 @@ nav{
     text-decoration: underline !important;
     color:#a8ac2e !important;
 }
-@media (min-width: 768px){
-    .navbar-nav {
-        float: right;
-        margin: 0;}
-}
+
 
 .nav>li>a:hover {
     text-decoration: underline;
@@ -93,4 +94,27 @@ nav{
     background: url("../images/world-map.png");
     background-size: cover;
     width: 100%;
+}
+
+.faq-q{
+    color: #878787 !important; 
+    font-weight: 700; 
+    font-size: 18px; 
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px){
+    /* .navbar-nav {
+        float: right;
+        margin: 0;
+    } */
+
+    .h1-home-header{
+        font-size: 70px;
+        letter-spacing: -4px; 
+        font-weight: 700;
+    }
+    .faq-q{
+        font-size: 14px; 
+    }
 }
