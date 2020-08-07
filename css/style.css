@@ -109,6 +109,13 @@ ul li .active{
     border: 1px solid #A8AC2E !important;
 }
 
+.payment-height{
+    height: 45vh;
+}
+.card-height{
+    height: 85vh;
+}
+
 @media only screen and (max-width: 768px){
     /* .navbar-nav {
         float: right;
@@ -122,5 +129,12 @@ ul li .active{
     }
     .faq-q{
         font-size: 14px; 
+    }
+    .card-height{
+        height: auto;
+    }
+
+    .payment-height{
+        height: auto;
     }
 }

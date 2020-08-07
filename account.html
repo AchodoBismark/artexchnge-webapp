@@ -59,27 +59,27 @@
 
     <section>
         <div class="container-fluid px-md-5 ">
-            <div class="row mt-2" style="height: 85vh;">
+            <div class="row mt-2 card-height" >
                 <div class="col-md-8 bg-white">
                    <!--Main Nav tabs -->
                     <ul class="nav nav-tabs mt-4">
                         <li class="nav-item">
-                        <a class="nav-link active text-dark" data-toggle="tab" href="#home">Deposit</a>
+                        <a class="nav-link active text-dark" data-toggle="tab" href="#deposit">Deposit</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-dark" data-toggle="tab" href="#menu1">Withdraw</a>
+                        <a class="nav-link text-dark" data-toggle="tab" href="#withdraw">Withdraw</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-dark" data-toggle="tab" href="#menu2">Convert currency</a>
+                        <a class="nav-link text-dark" data-toggle="tab" href="#convertCurrency">Convert currency</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-dark" data-toggle="tab" href="#menu2">Transaction history</a>
+                        <a class="nav-link text-dark" data-toggle="tab" href="#transaction">Transaction history</a>
                         </li>
                     </ul>
 
                     <!-- Main Tab content -->
                     <div class="tab-content">
-                        <div id="home" class="container tab-pane active"><br>
+                        <div id="deposit" class="container tab-pane active"><br>
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-5">
@@ -103,7 +103,7 @@
                                                 </li>
                                             </ul>
                                             <!-- payment Tab content -->
-                                            <div class="tab-content border border-custom rounded px-5" style="height: 50vh;">
+                                            <div class="tab-content border border-custom rounded px-md-5 payment-height mb-5 pb-3">
                                                 <div class="tab-pane fade active show" id="sub11">
                                                     <!-- CREDIT CARD FORM STARTS HERE -->
                                                     <div class="container">
@@ -227,13 +227,216 @@
                             </div>
                        
                         </div>
-                        <div id="menu1" class="container tab-pane fade"><br>
-                        <h3>Menu 1</h3>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        <div id="withdraw" class="container tab-pane fade"><br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 style="font-size: 40px; font-weight: 300;">Withdraw to your bank account</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 pt-5">
+                                    <form class="">
+                                        <div class="form-group">
+                                          <input type="number" class="form-control" id="yourName" aria-describedby="emailHelp" placeholder="Enter Amount">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select class="form-control" id="exampleFormControlSelect1" placeholder="Select Bank">
+                                              <option selected>Select Bank...</option>
+                                              <option>Access Bank</option>
+                                              <option>First Bank</option>
+                                              <option>GT Bank</option>
+                                              <option>UBA</option>
+                                            </select>
+                                          </div>
+                                        <div class="form-group">
+                                          <input type="number" class="form-control" id="yourEmail" placeholder="Enter Account Number">
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="text" class="form-control" id="phone" placeholder="Enter Account Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="yourMessage" rows="4" placeholder="Comment (Optional)"></textarea>
+                                          </div>
+                                          <div class="form-group mt-2">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                                              <label class="form-check-label text-muted" for="gridCheck">
+                                                I accept the terms and conditions
+                                              </label>
+                                            </div>
+                                          </div>
+                                        <a type="submit" class="py-2 px-3 mt-3" style="background-color: #A8AC2E; color: white;">Proceed to withdraw</a>
+                                      </form>
+                                </div>
+                            </div>
                         </div>
-                        <div id="menu2" class="container tab-pane fade"><br>
-                        <h3>Menu 2</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+                        <div id="convertCurrency" class="container tab-pane fade"><br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 style="font-size: 40px; font-weight: 300;">Withdraw to your bank account</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9 pt-5">
+                                    
+                                    <form class="">
+                                        <div class="row">
+                                            <div class="col-md-6 pr-3" style="border-right:1px solid #A8AC2E;">
+                                                <p class="text-muted font-weight-bold">The currency you own</p>
+                                                <div class="form-group">
+                                                    <select class="form-control" id="exampleFormControlSelect1" placeholder="Select Bank">
+                                                      <option selected>Select Currency...</option>
+                                                      <option>Naira (&#8358;)</option>
+                                                      <option>US Dollar ($)</option>
+                                                      <option>Euro (&#8364;)</option>
+                                                      <option>Bitcoin (&#8383;)</option>
+                                                    </select>
+                                                  </div>
+                                                <div class="form-group">
+                                                  <input type="number" class="form-control" id="yourEmail" placeholder="Enter Amount">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 pl-3">
+                                                <p class="text-muted font-weight-bold">The currency you want to convert to </p>
+                                                <div class="form-group">
+                                                    <select class="form-control" id="exampleFormControlSelect1" placeholder="Select Bank">
+                                                      <option selected>Select Currency...</option>
+                                                      <option>Naira (&#8358;)</option>
+                                                      <option>US Dollar ($)</option>
+                                                      <option>Euro (&#8364;)</option>
+                                                      <option>Bitcoin (&#8383;)</option>
+                                                    </select>
+                                                  </div>
+                                                <div class="form-group">
+                                                  <input type="number" class="form-control" id="yourEmail" placeholder="Enter Amount">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <a type="submit" class="py-2 px-3 mt-3" style="background-color: #A8AC2E; color: white;">Proceed to Convert</a>
+                                        </div>  
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="transaction" class="container tab-pane fade"><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-borderless table-hover table-responsive-md">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Discription</th>
+                                                <th scope="col">Date    .</th>
+                                                <th scope="col">Method</th>
+                                                <th scope="col">Balance</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">New Balance</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Deposit</td>
+                                                <td>03-02-2020</td>
+                                                <td> <small>Card Payment</small> </td>
+                                                <td>₦1800</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>Withdraw</td>
+                                                <td>03-02-2020</td>
+                                                <td><small>Card Payment</small></td>
+                                                <td>₦2250</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Deposit</td>
+                                                <td>03-02-2020</td>
+                                                <td> <small>Card Payment</small> </td>
+                                                <td>₦1800</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>Withdraw</td>
+                                                <td>03-02-2020</td>
+                                                <td><small>Card Payment</small></td>
+                                                <td>₦2250</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Deposit</td>
+                                                <td>03-02-2020</td>
+                                                <td> <small>Card Payment</small> </td>
+                                                <td>₦1800</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>Withdraw</td>
+                                                <td>03-02-2020</td>
+                                                <td><small>Card Payment</small></td>
+                                                <td>₦2250</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Deposit</td>
+                                                <td>03-02-2020</td>
+                                                <td> <small>Card Payment</small> </td>
+                                                <td>₦1800</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>Withdraw</td>
+                                                <td>03-02-2020</td>
+                                                <td><small>Card Payment</small></td>
+                                                <td>₦2250</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Deposit</td>
+                                                <td>03-02-2020</td>
+                                                <td> <small>Card Payment</small> </td>
+                                                <td>₦1800</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>Withdraw</td>
+                                                <td>03-02-2020</td>
+                                                <td><small>Card Payment</small></td>
+                                                <td>₦2250</td>
+                                                <td>₦450</td>
+                                                <td>₦2250</td>
+                                              </tr>
+                                             
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -282,3 +485,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script> 
     <script src="./js/script.js"></script>
 </body>
+</html>
