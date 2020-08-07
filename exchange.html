@@ -19,13 +19,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto mr-5">
                 <li class="nav-item">
-                  <a class="nav-link text-white active" href="./account.html">Account<span class="sr-only">(current)</span></a>
+                  <a class="nav-link text-white " href="./account.html">Account<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-white" href="./listings.html">Listings</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white  " href="./exchange.html">Exchange</a>
+                  <a class="nav-link text-white  active" href="./exchange.html">Exchange</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-white" href="./portfolio.html">Portfolio</a>
@@ -52,7 +52,7 @@
     <section>
         <div class="container-fluid px-md-5">
             <div class="row mt-5">
-                <h1 class="text-white"> Account </h1>
+                <h1 class="text-white"> Exchange </h1>
             </div>
         </div>
     </section>
@@ -61,35 +61,79 @@
         <div class="container-fluid px-md-5 ">
             <div class="row mt-2" style="height: 85vh;">
                 <div class="col-md-8 bg-white">
+                    <form action="" class="mt-5 ">
+                        <div class="form-group col-md-4">
+                            <select class="form-control" id="exampleFormControlSelect1" placeholder="Select Bank">
+                              <option selected>Select Bank...</option>
+                              <option>Access Bank</option>
+                              <option>First Bank</option>
+                              <option>GT Bank</option>
+                              <option>UBA</option>
+                            </select>
+                          </div>
+                    </form>
                    <!-- Nav tabs -->
                     <ul class="nav nav-tabs mt-4">
                         <li class="nav-item">
-                        <a class="nav-link active text-dark" data-toggle="tab" href="#home">Deposit</a>
+                            <a class="nav-link active text-dark" data-toggle="tab" href="#buy">BUY</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-dark" data-toggle="tab" href="#menu1">Withdraw</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link text-dark" data-toggle="tab" href="#menu2">Convert currency</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link text-dark" data-toggle="tab" href="#menu2">Transaction history</a>
+                            <a class="nav-link text-dark" data-toggle="tab" href="#sell" >SELL</a>
                         </li>
                     </ul>
 
                     <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div id="home" class="container tab-pane active"><br>
-                        <h3>HOME</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="tab-content border-custom rounded pb-3">
+                        <div id="buy" class="container tab-pane active"><br>
+                            <div class="row">
+                                <form class="col-md-12">
+                                    <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label class="pure-material-textfield-outlined">
+                                                        <input placeholder=" " value="Buy">
+                                                        <span>Action</span>
+                                                      </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label class="pure-material-textfield-outlined">
+                                                        <input type="number" placeholder=" " value="10">
+                                                        <span>Quantity</span>
+                                                      </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label class="pure-material-textfield-outlined">
+                                                        <input type="number" placeholder=" " value="10">
+                                                        <span>Price</span>
+                                                      </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label class="pure-material-textfield-outlined">
+                                                        <input type="date" placeholder=" " >
+                                                        <span>Time-in-force</span>
+                                                      </label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 mt-2">
+                                            <a href="./app-welcome.html" type="submit" class="py-2 px-3 mt-2 w-100 text-center" style="background-color: #A8AC2E; color: white;">BUY</a>
+                                        </div>   
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <div id="menu1" class="container tab-pane fade"><br>
+
+
+                        <div id="sell" class="container tab-pane fade"><br>
                         <h3>Menu 1</h3>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div id="menu2" class="container tab-pane fade"><br>
-                        <h3>Menu 2</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                         </div>
                     </div>
                 </div>
