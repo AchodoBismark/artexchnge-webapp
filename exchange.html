@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtExchange</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body style="background-image: url(./images/app-bg.png); background-attachment: fixed;">
+    <header class="pt-4">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: black;">
+            <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" width="" height="" alt="" loading="lazy"></a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item">
+                  <a class="nav-link text-white active" href="./account.html">Account<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./listings.html">Listings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white  " href="./exchange.html">Exchange</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./repository.html">Repository</a>
+                </li>
+
+                <li class="nav-item dropdown mx-md-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <!-- <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">  -->
+                      <span class="font-weight-bold text-white mx-md-3">Bismark</span> 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./app-welcome.html">Dashboard</a>
+                      <a class="dropdown-item" href="#">Edit Profile</a>
+                      <a class="dropdown-item" href="./login.html">Log Out</a>
+                    </div>
+                  </li>   
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="container-fluid px-md-5">
+            <div class="row mt-5">
+                <h1 class="text-white"> Account </h1>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid px-md-5 ">
+            <div class="row mt-2" style="height: 85vh;">
+                <div class="col-md-8 bg-white">
+                   <!-- Nav tabs -->
+                    <ul class="nav nav-tabs mt-4">
+                        <li class="nav-item">
+                        <a class="nav-link active text-dark" data-toggle="tab" href="#home">Deposit</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" data-toggle="tab" href="#menu1">Withdraw</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" data-toggle="tab" href="#menu2">Convert currency</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" data-toggle="tab" href="#menu2">Transaction history</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="home" class="container tab-pane active"><br>
+                        <h3>HOME</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div id="menu2" class="container tab-pane fade"><br>
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 bg-dark px-5 pt-5">
+                    <h1 class="text-white">Account Balance</h1>
+                    <h3 class="mt-5" style="color: #a8ac2e;">Currency</h3>
+                    <table class="table table-borderless table-dark">
+                        <tbody>
+                          <tr>
+                            <td>Cash</td>
+                            <td>₦ 20,000</td>
+                          </tr>
+                          <tr>
+                            <td>Crypto  (DAC)</td>
+                            <td>₦ 10,000</td>
+                          </tr>
+
+                          <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>₦ 30,000</strong></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+                </div>
+                
+              
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script> 
+</body>

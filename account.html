@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtExchange</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body style="background-image: url(./images/app-bg.png); background-attachment: fixed;">
+    <header class="pt-4">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: black;">
+            <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" width="" height="" alt="" loading="lazy"></a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item">
+                  <a class="nav-link text-white active" href="./account.html">Account<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./listings.html">Listings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white  " href="./exchange.html">Exchange</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./repository.html">Repository</a>
+                </li>
+
+                <li class="nav-item dropdown mx-md-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <!-- <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">  -->
+                      <span class="font-weight-bold text-white mx-md-3">Bismark</span> 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./app-welcome.html">Dashboard</a>
+                      <a class="dropdown-item" href="#">Edit Profile</a>
+                      <a class="dropdown-item" href="./login.html">Log Out</a>
+                    </div>
+                  </li>   
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="container-fluid px-md-5">
+            <div class="row mt-5">
+                <h1 class="text-white"> Account </h1>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid px-md-5 ">
+            <div class="row mt-2" style="height: 85vh;">
+                <div class="col-md-8 bg-white">
+                   <!--Main Nav tabs -->
+                    <ul class="nav nav-tabs mt-4">
+                        <li class="nav-item">
+                        <a class="nav-link active text-dark" data-toggle="tab" href="#home">Deposit</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" data-toggle="tab" href="#menu1">Withdraw</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" data-toggle="tab" href="#menu2">Convert currency</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" data-toggle="tab" href="#menu2">Transaction history</a>
+                        </li>
+                    </ul>
+
+                    <!-- Main Tab content -->
+                    <div class="tab-content">
+                        <div id="home" class="container tab-pane active"><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <form>
+                                            <div class="form-group">
+                                              <input type="number" min="1" step="any" class="form-control form-control-lg" id="yourEmail" placeholder="Enter Amount">
+                                            </div>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 mt-5">
+                                        <h4 style="font-size: 40px; font-weight: 300;">Payment Method</h4>
+                                        <!--payment Nav tabs -->
+                                        <div class="tabbable">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#sub11" class="nav-link active text-dark">Card Payment</a>
+                                                </li>
+                                                <li><a href="#sub12" class="nav-link text-dark">Bank Transfer</a>
+                                                </li>
+                                            </ul>
+                                            <!-- payment Tab content -->
+                                            <div class="tab-content border border-custom rounded px-5" style="height: 50vh;">
+                                                <div class="tab-pane fade active show" id="sub11">
+                                                    <!-- CREDIT CARD FORM STARTS HERE -->
+                                                    <div class="container">
+                                                            <div class="row mt-5">
+                                                                <div class="col-md-6">
+                                                                    <h3 class="panel-md-title display-md-td mr-md-2" >Payment Details</h3>
+                                                                </div>
+                                                                <div class="col-md-6" >                            
+                                                                    <img class="img-responsive pull-right" src="https://i.imgur.com/gIMFDbp.png">
+                                                                </div>
+                                                                
+                                                                
+                                                            </div>                    
+                                                        
+                                                        <div class="panel-body">
+                                                            <form role="form" id="payment-form">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label for="cardNumber">CARD NUMBER</label>
+                                                                            <div class="input-group">
+                                                                                <input type="tel" class="form-control" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35\d{3})\d{11})$"
+                                                                                    required autofocus 
+                                                                                />
+                                                                                <span class="input-group-addon"><i class="fa fa-credit-card" id="cardlogo" style="color:purple;font-size:2rem;"></i></span>
+                                                                            </div>
+                                                                        </div>                            
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-7 col-md-7">
+                                                                        <div class="form-group">
+                                                                            <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                                                            <input type="tel" class="form-control"  name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp" required />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xs-5 col-md-5 pull-right">
+                                                                        <div class="form-group">
+                                                                            <label for="cardCVC">CV CODE</label>
+                                                                            <input  type="tel"  class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc"  required />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-group mt-2">
+                                                                            <div class="form-check">
+                                                                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                                              <label class="form-check-label" for="gridCheck">
+                                                                                I accept the terms and conditions
+                                                                              </label>
+                                                                            </div>
+                                                                          </div>
+                                                                    </div>  
+                                                                    <div class="col-md-4">
+                                                                        <a href="./app-welcome.html" type="submit" class="py-2 px-3 mt-2 w-100 text-center" style="background-color: #A8AC2E; color: white;">PAY</a>
+                                                                    </div>                      
+                                                                </div>
+                                                                <div class="row" style="display:none;">
+                                                                    <div class="col-xs-12">
+                                                                        <p class="payment-errors"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>            
+                                                    <!-- CREDIT CARD FORM ENDS HERE -->
+                                                </div>
+                                                <div class="tab-pane fade" id="sub12">
+                                                    <div class="containter">
+                                                        <div class="row mt-5">
+                                                            <div class="col-md-12">
+                                                                <h4 style="font-size: 18px; font-weight: 300;">Transfer to this account</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-5">
+                                                            <div class="col-md-4" style="border-right:1px solid #A8AC2E;">
+                                                                <div>
+                                                                    <p class="text-muted mb-0">Bank</p>
+                                                                    <p class="font-weight-bold">First Bank of Nigeria (FBN)</p>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="text-muted mb-0">Account Number</p>
+                                                                    <p class="font-weight-bold">0008765227</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-4" style="border-right:1px solid #A8AC2E;">
+                                                                <div>
+                                                                    <p class="text-muted mb-0">Bank</p>
+                                                                    <p class="font-weight-bold">GT Bank</p>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="text-muted mb-0">Account Number</p>
+                                                                    <p class="font-weight-bold">0008765227</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div>
+                                                                    <p class="text-muted mb-0">Bank</p>
+                                                                    <p class="font-weight-bold">UBA</p>
+                                                                </div>
+                                                                <div>
+                                                                    <p class="text-muted mb-0">Account Number</p>
+                                                                    <p class="font-weight-bold">0008765227</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-2 mx-auto mt-5">
+                                                                <a href="./app-welcome.html" type="submit" class="py-2 px-3 mt-2 w-100 text-center" style="background-color: #A8AC2E; color: white;">PAY</a>
+                                                            </div>   
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        </div>
+                        <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div id="menu2" class="container tab-pane fade"><br>
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                
+                <div class="col-md-4 bg-dark px-5 pt-5">
+                    <h1 class="text-white">Account Balance</h1>
+                    <h3 class="mt-5" style="color: #a8ac2e;">Currency</h3>
+                    <table class="table table-borderless table-dark">
+                        <tbody>
+                          <tr>
+                            <td>Cash</td>
+                            <td>₦ 20,000</td>
+                          </tr>
+                          <tr>
+                            <td>Crypto  (DAC)</td>
+                            <td>₦ 10,000</td>
+                          </tr>
+
+                          <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>₦ 30,000</strong></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                      <div class="text-center py-5">
+                        <a href="" class="py-2 px-3 mt-5" style="background-color: #A8AC2E; color: white;" >Buy Art Shares</a>
+                    </div>
+                </div>
+                </div>
+                
+              
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script> 
+    <script src="./js/script.js"></script>
+</body>
